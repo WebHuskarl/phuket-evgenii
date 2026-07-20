@@ -1,0 +1,44 @@
+.footer {
+  padding-block: 3.2rem 4rem;
+  border-top: 0.1rem solid var(--color-line);
+}
+
+.footer__inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer__meta {
+  font-size: 1.3rem;
+  color: var(--color-mute);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.footer__link {
+  font-size: 1.3rem;
+  color: var(--color-sand);
+  transition: color var(--transition);
+}
+
+.footer__link:hover {
+  color: var(--color-ocean);
+}
+
+.footer__disclaimer {
+  max-width: 56rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-mute);
+}

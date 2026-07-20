@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Экскурсии Пхукет Евгений - индивидуальные и групповые туры с русским гидом. Суша, море и аренда катера KAT31."
+    />
+    <title>Экскурсии Пхукет Евгений</title>
+    <link rel="icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/hero.css" />
+    <link rel="stylesheet" href="./css/components/formats.css" />
+    <link rel="stylesheet" href="./css/components/boat.css" />
+    <link rel="stylesheet" href="./css/components/form.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="header__brand" href="#top">Экскурсии Пхукет Евгений</a>
+
+        <nav class="header__nav" aria-label="Основная навигация">
+          <a class="header__link" href="#formats" data-nav-link>Форматы</a>
+          <a class="header__link" href="#boat" data-nav-link>Катер</a>
+          <a class="header__link" href="#form" data-nav-link>Заявка</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__phone" href="tel:+79872840513">+7 (987) 284-05-13</a>
+          <a class="btn btn--primary header__cta" href="#form"><span>Оставить заявку</span></a>
+          <button
+            class="header__burger"
+            type="button"
+            data-burger
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Открыть меню"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__mobile" id="mobile-menu">
+        <a class="header__mobile-link" href="#formats" data-mobile-link>Форматы</a>
+        <a class="header__mobile-link" href="#boat" data-mobile-link>Катер</a>
+        <a class="header__mobile-link" href="#form" data-mobile-link>Заявка</a>
+        <a class="header__mobile-phone" href="tel:+79872840513">+7 (987) 284-05-13</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Главный экран">
+        <div class="hero__media" aria-hidden="true">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="./images/hero/hero-aerial.jpg"
+          >
+            <source src="./images/hero/hero-loop.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="./images/hero/hero-aerial.jpg"
+            alt=""
+            width="1600"
+            height="1000"
+            decoding="async"
+            style="display: none"
+            data-hero-fallback
+          />
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="hero__brand is-reveal is-visible">Экскурсии Пхукет Евгений</p>
+          <h1 class="hero__title is-reveal is-visible is-reveal-delay-1">Пхукет. Ваш маршрут.</h1>
+          <p class="hero__text is-reveal is-visible is-reveal-delay-2">
+            Русский гид. Индивидуальные и групповые экскурсии по суше и морю.
+          </p>
+          <div class="hero__actions is-reveal is-visible is-reveal-delay-3">
+            <a class="btn btn--primary" href="#form">Оставить заявку</a>
+            <a
+              class="btn btn--ghost"
+              href="https://t.me/EvegeniiValerievich"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Написать в Telegram</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section formats" id="formats" data-section>
+        <div class="container">
+          <div class="formats__head is-reveal" data-reveal>
+            <p class="section__label">Форматы</p>
+            <h2 class="section__title">Выберите формат поездки</h2>
+            <p class="section__text">
+              Короткий ориентир по ценам. Подробности и точный маршрут - в заявке.
+            </p>
+          </div>
+
+          <div class="formats__list">
+            <article class="format is-reveal" data-reveal>
+              <div class="format__media" aria-hidden="true">
+                <img
+                  src="./images/formats/format-land.jpg"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="format__shade"></div>
+              </div>
+              <div class="format__body">
+                <p class="format__index">Суша</p>
+                <h3 class="format__title">Сухопутные экскурсии</h3>
+                <p class="format__meta">Русский гид. Автомобиль.</p>
+                <p class="format__price">Индивидуально от 5 000 бат · Группа от 1 600 бат</p>
+                <a
+                  class="btn btn--ghost format__cta"
+                  href="#form"
+                  data-interest-value="Суша"
+                  >Хочу это</a
+                >
+              </div>
+            </article>
+
+            <article class="format format--wide is-reveal is-reveal-delay-1" data-reveal>
+              <div class="format__media" aria-hidden="true">
+                <img
+                  src="./images/formats/format-sea.jpg"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="format__shade"></div>
+              </div>
+              <div class="format__body">
+                <p class="format__index">Море</p>
+                <h3 class="format__title">Морские экскурсии</h3>
+                <p class="format__meta">Спидбот, катамаран, яхта. Пхи-Пхи, Майтон, Май Бэй.</p>
+                <p class="format__price">Группа от 1 700 бат · Индивидуально от 13 000 бат</p>
+                <a
+                  class="btn btn--ghost format__cta"
+                  href="#form"
+                  data-interest-value="Море"
+                  >Хочу это</a
+                >
+              </div>
+            </article>
+
+            <article class="format is-reveal is-reveal-delay-2" data-reveal>
+              <div class="format__media" aria-hidden="true">
+                <img
+                  src="./images/formats/format-boat.jpg"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="format__shade"></div>
+              </div>
+              <div class="format__body">
+                <p class="format__index">Свой катер</p>
+                <h3 class="format__title">Аренда катера KAT31</h3>
+                <p class="format__meta">Быстрый двухмоторный катер. 1-6 человек, максимум 8.</p>
+                <p class="format__price">Старт от пирса Чалонг · от 27 000 бат</p>
+                <a
+                  class="btn btn--primary format__cta"
+                  href="#form"
+                  data-interest-value="Катер KAT31"
+                  >Хочу это</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="hairline container" />
+
+      <section class="section boat" id="boat" data-section>
+        <div class="container boat__grid">
+          <div class="boat__intro is-reveal" data-reveal>
+            <p class="section__label">Катер KAT31</p>
+            <h2 class="section__title">Ваш день на воде</h2>
+            <p class="section__text">
+              Аренда быстрого двухмоторного катера 24 ft / 7.3 м. Старт от пирса Чалонг.
+            </p>
+
+            <div class="boat__facts">
+              <p class="boat__fact"><strong>1-6 человек</strong> максимум 8</p>
+              <p class="boat__fact"><strong>Включено</strong> напитки, фрукты, маски, страховка</p>
+              <p class="boat__fact"><strong>Старт</strong> пирс Чалонг</p>
+            </div>
+
+            <div class="boat__routes">
+              <p class="boat__routes-title">Примеры маршрутов</p>
+
+              <div class="boat__route">
+                <div>
+                  <p class="boat__route-name">Коралловый остров</p>
+                  <p class="boat__route-time">08:30-13:00 · 4.5 часа</p>
+                </div>
+                <p class="boat__route-price">27 000 бат</p>
+              </div>
+
+              <div class="boat__route">
+                <div>
+                  <p class="boat__route-name">Коралл + закат у мыса Промптеп</p>
+                  <p class="boat__route-time">14:00-19:00 · 5 часов</p>
+                </div>
+                <p class="boat__route-price">33 000 бат</p>
+              </div>
+
+              <div class="boat__route">
+                <div>
+                  <p class="boat__route-name">Коралловый остров + Рача Яй</p>
+                  <p class="boat__route-time">10:00-18:00 · 8 часов</p>
+                </div>
+                <p class="boat__route-price">43 000 бат</p>
+              </div>
+
+              <div class="boat__route">
+                <div>
+                  <p class="boat__route-name">Пхи-Пхи + Майтон</p>
+                  <p class="boat__route-time">10:00-18:00 · 8 часов</p>
+                </div>
+                <p class="boat__route-price">53 000 бат</p>
+              </div>
+            </div>
+
+            <p class="boat__note">
+              Не включено: обед на островах, трансфер с отеля, сборы нацпарков, алкоголь.
+              Цены ориентир - уточняйте в переписке.
+            </p>
+
+            <div class="boat__actions">
+              <a class="btn btn--primary" href="#form" data-interest-value="Катер KAT31"
+                >Забронировать катер</a
+              >
+            </div>
+          </div>
+
+          <div class="boat__gallery is-reveal is-reveal-delay-1" data-reveal>
+            <figure class="boat__shot boat__shot--wide">
+              <img
+                src="./images/boat/boat-aerial-01.jpg"
+                alt="Катер KAT31 на бирюзовой воде, вид сверху"
+                width="1400"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="boat__shot">
+              <img
+                src="./images/boat/boat-aerial-03.jpg"
+                alt="Катер у рифа, вид сверху"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="boat__shot">
+              <img
+                src="./images/boat/boat-fruit-table.jpg"
+                alt="Фрукты на столе катера и вид на море"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="boat__shot boat__shot--wide">
+              <img
+                src="./images/boat/boat-beach-approach.jpg"
+                alt="Подход катера к пляжу"
+                width="1400"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lead" id="form" data-section>
+        <div class="container lead__grid">
+          <div class="lead__form-wrap is-reveal" data-reveal>
+            <p class="section__label">Заявка</p>
+            <h2 class="section__title">Оставьте заявку</h2>
+            <p class="section__text">Короткая форма. Откроется Telegram с готовым текстом.</p>
+
+            <form class="form" data-lead-form novalidate>
+              <div class="form__field">
+                <label class="form__label" for="name">Имя</label>
+                <input
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  maxlength="80"
+                />
+                <p class="form__hint" data-hint></p>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="contact">Телефон или Telegram</label>
+                <input
+                  class="form__input"
+                  id="contact"
+                  name="contact"
+                  type="text"
+                  autocomplete="tel"
+                  required
+                  maxlength="80"
+                  placeholder="+7... или @username"
+                />
+                <p class="form__hint" data-hint></p>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="interest">Интерес</label>
+                <select class="form__select" id="interest" name="interest" data-interest required>
+                  <option value="" disabled selected>Выберите</option>
+                  <option value="Суша">Суша</option>
+                  <option value="Море">Море</option>
+                  <option value="Катер KAT31">Катер KAT31</option>
+                  <option value="Другое">Другое</option>
+                </select>
+                <p class="form__hint" data-hint></p>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="comment">Комментарий</label>
+                <textarea
+                  class="form__textarea"
+                  id="comment"
+                  name="comment"
+                  maxlength="400"
+                  placeholder="Даты, число людей, пожелания"
+                ></textarea>
+              </div>
+
+              <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
+              <p class="form__status" data-form-status aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="contacts is-reveal is-reveal-delay-1" data-reveal>
+            <p class="section__label">Контакты</p>
+            <h2 class="section__title">Связь напрямую</h2>
+
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__label">Телефон</span>
+                <a class="contacts__value" href="tel:+79872840513">+7 (987) 284-05-13</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Telegram</span>
+                <a
+                  class="contacts__value"
+                  href="https://t.me/EvegeniiValerievich"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >t.me/EvegeniiValerievich</a
+                >
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Instagram</span>
+                <a
+                  class="contacts__value"
+                  href="https://www.instagram.com/ekskursii.phuket.evgenii/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@ekskursii.phuket.evgenii</a
+                >
+              </li>
+            </ul>
+
+            <p class="contacts__extra">
+              Организуем трансфер из аэропорта до отеля. Бесплатный трансфер в Princess Jewelry.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__brand">Экскурсии Пхукет Евгений</p>
+          <p class="footer__meta">© 2026</p>
+        </div>
+
+        <div class="footer__links">
+          <a
+            class="footer__link"
+            href="https://t.me/EvegeniiValerievich"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Telegram</a
+          >
+          <a
+            class="footer__link"
+            href="https://www.instagram.com/ekskursii.phuket.evgenii/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a class="footer__link" href="tel:+79872840513">Позвонить</a>
+        </div>
+
+        <p class="footer__disclaimer">
+          Цены на сайте - ориентир. Точную стоимость и наличие мест уточняйте в переписке.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script>
+      (function () {
+        var video = document.querySelector(".hero__media video");
+        var fallback = document.querySelector("[data-hero-fallback]");
+        if (!video || !fallback) return;
+        video.addEventListener("error", function () {
+          video.style.display = "none";
+          fallback.style.display = "block";
+          fallback.style.width = "100%";
+          fallback.style.height = "100%";
+          fallback.style.objectFit = "cover";
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/* Mobile-first overrides and breakpoints */
+
+@media (min-width: 48em) {
+  :root {
+    --container-pad: 3.2rem;
+    --header-h: 5.2rem;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+
+  .header__phone {
+    display: inline-flex;
+  }
+
+  .header__mobile {
+    display: none;
+  }
+
+  .format {
+    min-height: 32rem;
+  }
+
+  .format__body {
+    padding: 3.2rem 4rem;
+  }
+
+  .boat__grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4.8rem;
+    align-items: start;
+  }
+
+  .boat__gallery {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .boat__shot:nth-child(2) {
+    aspect-ratio: 3 / 4;
+  }
+
+  .lead__grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 6.4rem;
+    align-items: start;
+  }
+
+  .lead__form-wrap {
+    padding: 3.2rem;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 64em) {
+  :root {
+    --container-pad: 4.8rem;
+  }
+
+  .section {
+    padding-block: 10rem;
+  }
+
+  .formats {
+    padding-block: 10rem 6rem;
+  }
+
+  .format {
+    min-height: 36rem;
+  }
+
+  .format:nth-child(2) {
+    margin-left: 6%;
+  }
+
+  .format:nth-child(3) {
+    margin-right: 8%;
+  }
+
+  .boat__gallery {
+    gap: 1.2rem;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+  }
+}
+
+@media (min-width: 80em) {
+  .hero__content {
+    padding-block: 5rem 8rem;
+  }
+
+  .boat__grid {
+    gap: 7.2rem;
+  }
+}
+
+@media (max-width: 47.99em) {
+  .header__cta span {
+    display: none;
+  }
+
+  .header__cta::after {
+    content: "Заявка";
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .boat__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boat__shot--wide {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,0 +1,10 @@
+infoo/
+BUILDERBRIEF.md
+Общий промпт начало.txt
+Общие правила.txt
+Технические правила.txt
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

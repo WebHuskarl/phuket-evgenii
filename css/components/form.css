@@ -1,0 +1,145 @@
+.lead {
+  padding-block: 8rem;
+  background:
+    radial-gradient(ellipse at top right, rgba(94, 183, 192, 0.08), transparent 42%),
+    var(--color-night);
+  border-top: 0.1rem solid var(--color-line);
+}
+
+.lead__grid {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.lead__form-wrap {
+  padding: 2.4rem;
+  border: 0.1rem solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.form {
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.form__field {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+  width: 100%;
+  min-height: 4.8rem;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid var(--color-line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--color-ink);
+  transition: border-color var(--transition);
+}
+
+.form__textarea {
+  min-height: 12rem;
+  resize: vertical;
+}
+
+.form__input:hover,
+.form__select:hover,
+.form__textarea:hover,
+.form__input:focus-visible,
+.form__select:focus-visible,
+.form__textarea:focus-visible {
+  border-color: rgba(232, 226, 214, 0.45);
+}
+
+.form__input.is-invalid,
+.form__select.is-invalid,
+.form__textarea.is-invalid {
+  border-color: var(--color-error);
+}
+
+.form__hint {
+  min-height: 1.6rem;
+  font-size: 1.2rem;
+  color: var(--color-error);
+}
+
+.form__select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-mute) 50%),
+    linear-gradient(135deg, var(--color-mute) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.8rem) 50%,
+    calc(100% - 1.3rem) 50%;
+  background-size: 0.5rem 0.5rem, 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+}
+
+.form__select option {
+  color: #111;
+}
+
+.form__status {
+  min-height: 2rem;
+  font-size: 1.3rem;
+  color: var(--color-ocean);
+}
+
+.form__status.is-error {
+  color: var(--color-error);
+}
+
+.contacts {
+  display: grid;
+  gap: 2rem;
+  align-content: start;
+}
+
+.contacts__list {
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.contacts__item {
+  display: grid;
+  gap: 0.4rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 0.1rem solid var(--color-line);
+}
+
+.contacts__label {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+}
+
+.contacts__value {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  transition: color var(--transition);
+}
+
+a.contacts__value:hover {
+  color: var(--color-ocean);
+}
+
+.contacts__extra {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--color-mute);
+}
