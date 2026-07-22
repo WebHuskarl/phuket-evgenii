@@ -9,6 +9,7 @@ body {
   background-color: var(--color-night);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  min-width: 370px;
 }
 
 .container {
